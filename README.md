@@ -77,9 +77,7 @@ Designed for **test equipment, control systems, industrial automation, and analo
 PrecisionDAC/  
 │
 ├── firmware/  
-│ ├── src/  
-│ ├── include/  
-│ └── Makefile  
+│ └── main.c  
 │
 ├── hardware/  
 │ └── schematics/  
