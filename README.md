@@ -116,9 +116,51 @@ This project includes optional utilities:
 ## 📦 Build & Flash Instructions
 ### 1. Install AVR toolchain
 - AVR-GCC  
-- Atmel Studio  
+- Atmel/Microchip Studio
+- Docklight Scripting / Docklight Standard  
 
-### 2. Build
-```bash
-make
-avrdude -c atmelice -p x128a1u -U flash:w:main.hex
+### 2. Build  
+#### 2 — Open the project  
+- Open Microchip Studio  
+- Go to: File → Open → Project/Solution  
+- Select the .atsln file inside the project folder  
+#### Step 3 — Configure the device  
+- Go to: Project → Properties → Device  
+- Select: ATxmega128A1U  
+- Make sure the toolchain is AVR/GNU C Compiler  
+#### Step 4 — Set project clock (recommended)  
+- Go to: Project → Properties → Toolchain → Symbols  
+- Define CPU frequency: F_CPU=32000000UL  
+#### Step 5 — Build the firmware  
+- Go to: Build → Build Solution  
+- The compiled HEX file will be located in: /Debug/YourProjectName.hex  
+
+### 3. Flashing the Firmware (Using Atmel-ICE)  
+#### Step 1 — Open Device Programming  
+- Go to: Tools → Device Programming  
+#### Step 2 — Select programmer & device  
+- Tool: Atmel-ICE  
+- Device: ATxmega128A1U  
+- Interface: PDI (mandatory for XMEGA)  
+#### Step 3 — Verify connection  
+- Click Read (to read device signature)  
+#### Step 4 — Load the HEX file  
+- Open the Memories section  
+- Select the .hex file generated from the build  
+#### Step 5 — Flash  
+- Click Program  
+
+### 2. Docklight Configuration  
+#### Step 1 — Open Docklight  
+- Go to: Project → New Project  
+#### Step 2 — Set Communication Settings  
+- COM Port: Select the port detected in Device Manager  
+- Baud Rate: 115200 (or whatever your firmware uses)  
+- Data Bits: 8  
+- Parity: None  
+- Stop Bits: 1  
+- Flow Control: None  
+#### Step 3 — Connect  
+- Click Project → Start Communication  
+- You should now see incoming data from the ATxmega128A1U  
+
