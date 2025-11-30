@@ -116,8 +116,7 @@ This project includes optional utilities:
 ## 📦 Build & Flash Instructions
 ### 1. Install AVR toolchain
 - AVR-GCC  
-- avrdude  
-- Atmel/Microchip Studio (optional)
+- Atmel Studio  
 
 ### 2. Build
 ```bash
