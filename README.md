@@ -74,23 +74,23 @@ Designed for **test equipment, control systems, industrial automation, and analo
 ---
 
 ## 📁 Repository Structure
-PrecisionDAC/
+PrecisionDAC/  
 │
-├── firmware/
-│ ├── src/
-│ ├── include/
-│ └── Makefile
+├── firmware/  
+│ ├── src/  
+│ ├── include/  
+│ └── Makefile  
 │
-├── hardware/
-│ ├── schematics/
-│ └── pcb/
+├── hardware/  
+│ ├── schematics/  
+│ └── pcb/  
 │
-├── docs/
-│ ├── images/
-│ └── pinouts/
+├── docs/  
+│ ├── images/  
+│ └── pinouts/  
 │
-├── LICENSE
-└── README.md
+├── LICENSE  
+└── README.md  
 
 ---
 
