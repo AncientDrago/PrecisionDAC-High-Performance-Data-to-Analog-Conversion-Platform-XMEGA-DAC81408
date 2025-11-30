@@ -82,7 +82,7 @@ PrecisionDAC/
 │ └── Makefile  
 │
 ├── hardware/  
-│ ├── schematics/  
+│ └── schematics/  
 │
 ├── docs/  
 │ ├── images/  
