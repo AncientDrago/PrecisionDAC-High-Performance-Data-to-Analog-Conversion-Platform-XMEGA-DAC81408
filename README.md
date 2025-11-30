@@ -83,7 +83,6 @@ PrecisionDAC/
 │
 ├── hardware/  
 │ ├── schematics/  
-│ └── pcb/  
 │
 ├── docs/  
 │ ├── images/  
