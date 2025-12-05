@@ -82,9 +82,8 @@ PrecisionDAC/
 ├── hardware/  
 │ └── schematics/  
 │
-├── docs/  
-│ ├── images/  
-│ └── pinouts/  
+├── docs/    
+│ └── schematic/  
 │
 ├── LICENSE  
 └── README.md  
