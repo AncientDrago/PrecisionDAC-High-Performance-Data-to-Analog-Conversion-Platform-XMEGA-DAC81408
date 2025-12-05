@@ -84,7 +84,7 @@ PrecisionDAC/
 │
 ├── docs/  
 | ├── datasheet/  
-│ └── schematic/  
+│ └── images/  
 │
 ├── LICENSE  
 └── README.md  
